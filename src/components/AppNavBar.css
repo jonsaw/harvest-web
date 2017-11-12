@@ -1,0 +1,23 @@
+.AppNavBar {
+  border-top: 3px solid #ec7b24;
+  border-bottom: 1px solid #ececec;
+}
+
+.AppNavBar ul {
+  display: flex;
+}
+
+.AppNavBar li {
+  display: inline-block;
+  border-right: 1px solid #ececec;
+}
+
+.AppNavBar .logo {
+  width: 2.5em;
+  display: block;
+  padding: 0.5em 1em;
+}
+
+.AppNavBar .logo img {
+  width: 100%;
+}
