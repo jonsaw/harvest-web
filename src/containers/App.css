@@ -1,4 +1,16 @@
 
 .App .wrapper {
   margin: auto;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.App .AppNavBar {
+  height: 4em;
+}
+
+.App .App-contents {
+  flex: 1 1 auto;
+  overflow: auto;
 }

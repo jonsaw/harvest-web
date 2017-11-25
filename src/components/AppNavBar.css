@@ -5,17 +5,27 @@
 
 .AppNavBar ul {
   display: flex;
+  height: 100%;
 }
 
 .AppNavBar li {
-  display: inline-block;
+  display: flex;
   border-right: 1px solid #ececec;
+  align-items: center;
+}
+
+.AppNavBar li a:hover {
+  transition: background ease 0.5s;
+  background: rgba(0, 0, 0, .03);
 }
 
 .AppNavBar .logo {
   width: 2.5em;
   display: block;
-  padding: 0.5em 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  height: 100%;
+  display: flex;
 }
 
 .AppNavBar .logo img {
