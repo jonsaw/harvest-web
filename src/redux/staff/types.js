@@ -1,0 +1,5 @@
+export const STAFF_REQUEST = 'STAFF_REQUEST';
+export const STAFF_FAILURE = 'STAFF_FAILURE';
+export const STAFF_SUCCESS = 'STAFF_SUCCESS';
+export const STAFF_EXISTING = 'STAFF_EXISTING';
+export const STAFF_ERROR = 'STAFF_ERROR';
