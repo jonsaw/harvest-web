@@ -8,11 +8,13 @@ import RouteApplied from './components/RouteApplied';
 
 import {
   AsyncHome,
+  AsyncConnect,
 } from './RouteLoaders';
 
 const Routes = ({ childProps }) => (
   <Switch>
     <RouteApplied path="/" exact component={AsyncHome} props={childProps} />
+    <RouteApplied path="/connect" component={AsyncConnect} props={childProps} />
   </Switch>
 );
 
