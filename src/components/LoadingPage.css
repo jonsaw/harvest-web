@@ -1,0 +1,8 @@
+.LoadingPage {
+  text-align: center;
+}
+
+.LoadingPage .loader {
+  margin-top: 2em;
+  width: 8em;
+}
