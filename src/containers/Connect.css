@@ -1,0 +1,67 @@
+
+.Connect .groups {
+  max-width: 800px;
+  margin: auto;
+}
+
+.Connect .groups > li {
+  margin-bottom: 1em;
+}
+
+.Connect .groups h2 {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.Connect .groups .list .staff {
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+.Connect .groups .list .staff h5 {
+  font-weight: 700;
+}
+
+.Connect .groups .list .staff .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.Connect .groups .list .staff .description {
+  padding: 0.5em;
+}
+
+.Connect .groups .list .staff .contact {
+  background: #ececec;
+}
+
+.Connect .groups .list .staff .contact a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+.Connect .groups .list .staff .contact a:hover {
+  transition: background ease 0.5s;
+  background: rgba(0, 0, 0, .03);
+}
+
+.Connect .groups .list .staff .contact img {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+}
+
+.Connect .groups .list .staff .header img.profile-image {
+  width: 2em;
+  height: 2em;
+}
