@@ -4,7 +4,7 @@
   "private": true,
   "author": {
     "name": "Jon Saw",
-    "email" : "jon.saw@gmail.com"
+    "email": "jon.saw@gmail.com"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,6 +16,7 @@
   "dependencies": {
     "connected-react-router": "^4.2.3",
     "history": "^4.7.2",
+    "moment": "^2.19.2",
     "prop-types": "^15.6.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
