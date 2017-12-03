@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   color: #4c4c4c;
 }
 
@@ -13,14 +14,25 @@ h1 {
 }
 
 h2 {
+  font-weight: 700;
   font-size: 1.5em;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.2rem;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .prompt {
@@ -29,4 +41,10 @@ h3 {
   margin-bottom: 1em;
   background: #ec7b24;
   color: white;
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    font-size: 13px;
+  }
 }
