@@ -40,6 +40,8 @@ const Event = (props) => {
           style={{
             backgroundImage: `url(${props.imageSrc050})`,
             backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: props.featured ? '400px' : '200px',
           }}
           alt={props.shortTitle}
         />

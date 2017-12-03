@@ -118,7 +118,7 @@ class Home extends Component {
         <LoadingPage isLoading={this.props.loading} />
         <ul className="events">
           {this.getEvents().map(event => (
-            <Event as="li" key={event.eventID} {...event} />
+            <Event as="li" key={event.eventID} {...event} featured={false} />
           ))}
           <li className="more">
             <Link to="/events">
