@@ -11,3 +11,8 @@ export const AsyncConnect = Loadable({
   loader: () => import('./containers/Connect'),
   loading: LoadingPage,
 });
+
+export const AsyncEvents = Loadable({
+  loader: () => import('./containers/Events'),
+  loading: LoadingPage,
+});
