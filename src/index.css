@@ -8,3 +8,11 @@ body {
 h2 {
   font-size: 1.5em;
 }
+
+.prompt {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  background: #ec7b24;
+  color: white;
+}
