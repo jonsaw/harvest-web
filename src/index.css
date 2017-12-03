@@ -35,6 +35,10 @@ h5 {
   font-size: 1rem;
 }
 
+button {
+  outline: none;
+}
+
 .prompt {
   text-align: center;
   padding: 1em;
