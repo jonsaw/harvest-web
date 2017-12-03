@@ -53,6 +53,17 @@ class Events extends Component {
       this.setState(state, resolve);
     });
   }
+  getEvents() {
+    return this.props.events.sort((a, b) => {
+      if (a.eventAt > b.eventAt) {
+        return 1;
+      }
+      if (a.eventAt < b.eventAt) {
+        return -1;
+      }
+      return 0;
+    });
+  }
   classNames(...classNames) {
     const names = [].concat(classNames.filter(c => !!c));
     if (this.props.className) {
@@ -79,7 +90,7 @@ class Events extends Component {
             <div className="prompt">{this.state.message}</div>
         }
         <ul>
-          {this.props.events.map(event => (
+          {this.getEvents().map(event => (
             <Event as="li" key={event.eventID} {...event} />
           ))}
         </ul>
