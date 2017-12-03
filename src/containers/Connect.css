@@ -27,12 +27,6 @@
   width: calc(50% - 0.5rem - 2px);
 }
 
-@media (max-width: 782px) {
-  .Connect .groups .list .staff {
-    width: calc(100% - 2px);
-  }
-}
-
 .Connect .groups .list .staff .details {
   order: 2;
   width: calc(100% - 7rem);
@@ -52,10 +46,6 @@
     #465298 10px,
     #465298 20px
   );
-}
-
-.Connect .groups .list .staff h5 {
-  font-weight: 700;
 }
 
 .Connect .groups .list .staff .header {
@@ -98,4 +88,25 @@
 .Connect .groups .list .staff .header img.profile-image {
   width: 2em;
   height: 2em;
+}
+
+@media screen and (max-width: 782px) {
+  .Connect .groups .list .staff {
+    width: calc(100% - 2px);
+  }
+  .Connect .groups .list .staff .contact a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .Connect .groups .list .staff {
+    height: 8rem;
+  }
+  .Connect .groups .list .staff .image {
+    width: 5rem;
+  }
+  .Connect .groups .list .staff .details {
+    width: calc(100% - 5rem);
+  }
 }
