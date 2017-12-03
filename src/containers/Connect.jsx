@@ -8,7 +8,6 @@ import * as status from '../redux/staff/status';
 
 import LoadingPage from '../components/LoadingPage';
 
-import profileImage from '../assets/images/profile.svg';
 import envelopeImage from '../assets/images/envelope.svg';
 import './Connect.css';
 
@@ -88,17 +87,19 @@ class Connect extends Component {
       <ul className="list">
         {this.getStaff(group).map(staff => (
           <li className="staff" key={staff.staffID}>
-            <div className="header">
-              <h5>{staff.name}</h5>
-              <img className="profile-image" src={profileImage} alt={`${staff.name} profile`} />
+            <div className="details">
+              <div className="header">
+                <h5>{staff.name}</h5>
+              </div>
+              <p className="description">{staff.description}</p>
+              <div className="contact">
+                <a href={`mailto:${staff.email}`} title={staff.email}>
+                  <img src={envelopeImage} alt="Email envelope" />
+                  {staff.email}
+                </a>
+              </div>
             </div>
-            <p className="description">{staff.description}</p>
-            <div className="contact">
-              <a href={`mailto:${staff.email}`} title={staff.email}>
-                <img src={envelopeImage} alt="Email envelope" />
-                {staff.email}
-              </a>
-            </div>
+            <div className="image" />
           </li>
         ))}
       </ul>
@@ -109,7 +110,7 @@ class Connect extends Component {
       <ul className="groups">
         {Connect.groups.map(group => (
           <li key={group}>
-            <h2>{group}</h2>
+            <h1>{group}</h1>
             {this.renderStaff(group)}
           </li>
         ))}
