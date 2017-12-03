@@ -1,0 +1,115 @@
+
+.App-contents {
+  padding-bottom: 3em;
+}
+
+.AppFooter {
+  background: #1b1c1d;
+  color: white;
+  z-index: 200;
+}
+
+.AppFooter .contents {
+  max-width: 800px;
+  margin: auto;
+}
+
+.AppFooter a {
+  color: white;
+  text-decoration: none;
+}
+
+.AppFooter .expand-button {
+  margin: -1em auto -0.75em;
+  display: block;
+  background: #1b1c1d;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: none;
+  padding: .6em 1em;
+  font-size: 1em;
+  letter-spacing: .8px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: background 0.5s ease;
+}
+
+.AppFooter .expanded-view .social {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.AppFooter .expanded-view .social > div {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  padding: 1rem 0;
+}
+
+.AppFooter .expanded-view .social a {
+}
+
+.AppFooter .expanded-view .social li {
+  padding: 0.25em 0 0.25em 1.5em;
+  display: block;
+}
+
+.AppFooter .expanded-view .social li {
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.AppFooter .expanded-view .social li.facebook {
+  background-image: url('../assets/images/icons/facebook.svg');
+}
+
+.AppFooter .expanded-view .social li.instagram {
+  background-image: url('../assets/images/icons/instagram.svg');
+}
+
+.AppFooter .expanded-view .social li.mail {
+  background-image: url('../assets/images/icons/mail.svg');
+}
+
+.AppFooter .expanded-view .social li.phone {
+  background-image: url('../assets/images/icons/phone.svg');
+}
+
+.AppFooter .expanded-view .social li.fax {
+  background-image: url('../assets/images/icons/fax.svg');
+}
+
+.AppFooter .expand-button img {
+  height: 1em;
+}
+
+.AppFooter .social-simple {
+  margin: 0 1em;
+}
+
+.AppFooter .social-simple a {
+  display: inline-block;
+  padding: 0.25em;
+}
+
+.AppFooter .social-simple {
+  display: flex;
+}
+
+.AppFooter .social-simple a img {
+  height: 1em;
+}
+
+@media screen and (min-width: 426px) {
+  .AppFooter .expanded-view .social > div {
+    width: 50%;
+    flex-grow: 0;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .AppFooter .expanded-view .social li {
+    font-size: 0.8em;
+  }
+}
