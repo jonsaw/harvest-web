@@ -7,6 +7,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import Routes from '../Routes';
 
 import AppNavBar from '../components/AppNavBar';
+import AppFooter from '../components/AppFooter';
 
 import './App.css';
 
@@ -20,6 +21,7 @@ const App = ({ history }) => {
         <div className="wrapper">
           <AppNavBar />
           <Routes childProps={childProps} />
+          <AppFooter />
         </div>
       </ConnectedRouter>
     </div>

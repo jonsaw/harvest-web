@@ -7,10 +7,20 @@
 }
 
 .App .AppNavBar {
-  height: 4em;
+  height: 3.5rem;
 }
 
 .App .App-contents {
   flex: 1 1 auto;
   overflow: auto;
+  height: 100%;
+}
+
+.App .AppFooter {
+  transition: height 0.15s ease-out;
+  height: 3.5rem;
+}
+
+.App .AppFooter.expanded {
+  height: 16rem;
 }
