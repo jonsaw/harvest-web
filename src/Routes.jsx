@@ -10,6 +10,7 @@ import {
   AsyncHome,
   AsyncConnect,
   AsyncEvents,
+  AsyncVisit,
 } from './RouteLoaders';
 
 const Routes = ({ childProps }) => (
@@ -17,6 +18,7 @@ const Routes = ({ childProps }) => (
     <RouteApplied path="/" exact component={AsyncHome} props={childProps} />
     <RouteApplied path="/connect" component={AsyncConnect} props={childProps} />
     <RouteApplied path="/events" component={AsyncEvents} props={childProps} />
+    <RouteApplied path="/visit" component={AsyncVisit} props={childProps} />
   </Switch>
 );
 

@@ -16,3 +16,8 @@ export const AsyncEvents = Loadable({
   loader: () => import('./containers/Events'),
   loading: LoadingPage,
 });
+
+export const AsyncVisit = Loadable({
+  loader: () => import('./containers/Visit'),
+  loading: LoadingPage,
+});
