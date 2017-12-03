@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import arrowUp from '../assets/images/icons/arrow-up.svg';
 import arrowDown from '../assets/images/icons/arrow-down.svg';
@@ -35,6 +36,28 @@ class AppFooter extends Component {
   }
   toggleExpand = () => {
     this.setState({ expand: !this.state.expand });
+  }
+  renderSimple() {
+    return (
+      <ul className="social-simple">
+        <li>
+          <a href="/">
+            <img src={fbIcon} alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <img src={instaIcon} alt="Instagram" />
+          </a>
+        </li>
+        {
+          window.location.pathname !== '/visit' &&
+          <li className="visit end">
+            <Link to="/visit">Visit</Link>
+          </li>
+        }
+      </ul>
+    );
   }
   renderExpanded() {
     return (
@@ -77,22 +100,7 @@ class AppFooter extends Component {
         </button>
         <div className="contents">
           {
-            !this.state.expand &&
-            <ul className="social-simple">
-              <li>
-                <a href="/">
-                  <img src={fbIcon} alt="Facebook" />
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <img src={instaIcon} alt="Instagram" />
-                </a>
-              </li>
-            </ul>
-          }
-          {
-            this.state.expand && this.renderExpanded()
+            this.state.expand ? this.renderExpanded() : this.renderSimple()
           }
         </div>
       </div>
