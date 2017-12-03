@@ -1,6 +1,8 @@
 .Home nav ul {
   display: flex;
   justify-content: space-around;
+  max-width: 800px;
+  margin: auto;
 }
 
 .Home nav ul li {
@@ -28,9 +30,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .Home .banner img {
+  max-width: 800px;
   width: 85%;
   display: block;
+}
+
+.Home .services {
+  text-align: center;
+}
+
+.Home .services h5 {
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.Home .services .service {
+  margin-bottom: 1em;
 }
