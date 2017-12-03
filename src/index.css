@@ -7,31 +7,31 @@ body {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: lighter;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 h2 {
-  font-weight: 700;
-  font-size: 1.5em;
+  font-weight: lighter;
+  font-size: 1.25em;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 h3 {
-  font-weight: 700;
+  font-weight: lighter;
   font-size: 1.2rem;
 }
 
 h4 {
-  font-weight: 700;
+  font-weight: lighter;
   font-size: 1.1rem;
 }
 
 h5 {
-  font-weight: 700;
+  font-weight: lighter;
   font-size: 1rem;
 }
 
