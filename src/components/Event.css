@@ -1,0 +1,92 @@
+.Event {
+  display: block;
+  height: 18.375rem;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  margin-bottom: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Event .header {
+  order: 1;
+}
+
+.Event.with-image .header {
+  margin-top: -9.1875rem;
+  height: 9.1875rem;
+  display: flex;
+}
+
+.Event:not(.with-image) .header {
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: white;
+  height: 7.1875rem;
+}
+
+.Event.green:not(.with-image) .header {
+  background: repeating-linear-gradient(
+    45deg,
+    #4cAf50,
+    #4cAf50 10px,
+    #8bc34a 10px,
+    #8bc34a 20px
+  );
+}
+
+.Event.pink:not(.with-image) .header {
+  background: repeating-linear-gradient(
+    45deg,
+    #e91e63,
+    #e91e63 10px,
+    #f06292 10px,
+    #f06292 20px
+  );
+}
+
+.Event .header h3 {
+  padding: 0.35em 0.75em;
+}
+
+.Event.with-image .header h3 {
+  align-self: flex-end;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  width: 100%;
+}
+
+.Event .date {
+  order: 2;
+  padding: 0 0.75em;
+  margin-top: 0.35em;
+  font-style: italic;
+}
+
+.Event p {
+  order: 2;
+  padding: 0.35em 0.75em;
+  flex-grow: 1;
+}
+
+.Event .image {
+  height: 9.1875rem;
+  order: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.Event .location {
+  border-top: 1px solid #ececec;
+  background: #ececec;
+  order: 3;
+  padding: 0.35em 0.75em;
+}
