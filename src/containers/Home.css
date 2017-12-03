@@ -1,11 +1,26 @@
 .Home nav ul {
   display: flex;
   justify-content: space-around;
-  padding: 1em 1.5em;
+}
+
+.Home nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.Home nav ul li a {
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+.Home nav ul li a:hover {
+  transition: background ease 0.5s;
+  background: rgba(0, 0, 0, .03);
 }
 
 .Home .banner {
-  height: 9em;
   background: linear-gradient(45deg,#f401f4,rgba(244,1,244,0) 70%)
     , linear-gradient(135deg,#01d560 10%,rgba(1,213,96,0) 80%)
     , linear-gradient(225deg,#6a04e7 10%,rgba(106,4,231,0) 80%)

@@ -1,15 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import './Home.css';
 import banner from '../assets/images/banner.png';
 
-const Home = () => (
-  <div className="Home">
+const classNames = (...names) => names.filter(n => !!n).join(' ');
+
+const Home = ({
+  className,
+}) => (
+  <div className={classNames('Home', className)}>
     <nav>
       <ul>
-        <li>Connect</li>
-        <li>Events</li>
-        <li>Newsletters</li>
+        <li>
+          <Link to="/connect">Connect</Link>
+        </li>
+        <li>
+          <Link to="/events">Happenings</Link>
+        </li>
+        <li>
+          <Link to="/">Inspire</Link>
+        </li>
       </ul>
     </nav>
     <div className="banner">
@@ -17,5 +29,13 @@ const Home = () => (
     </div>
   </div>
 );
+
+Home.propTypes = {
+  className: PropTypes.string,
+};
+
+Home.defaultProps = {
+  className: null,
+};
 
 export default Home;
