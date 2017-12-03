@@ -1,6 +1,6 @@
 
 .App-contents {
-  padding-bottom: 3em;
+  padding-bottom: 1.5rem;
 }
 
 .AppFooter {
@@ -20,18 +20,19 @@
 }
 
 .AppFooter .expand-button {
-  margin: -1em auto -0.75em;
+  cursor: pointer;
+  margin: -1em auto -0.65em;
   display: block;
   background: #1b1c1d;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  border-radius: 35%;
   border: none;
   padding: .6em 1em;
   font-size: 1em;
   letter-spacing: .8px;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1px dashed white;
   transition: background 0.5s ease;
+  border-bottom:4px solid white;
 }
 
 .AppFooter .expanded-view .social {
@@ -95,6 +96,19 @@
 
 .AppFooter .social-simple {
   display: flex;
+}
+
+.AppFooter .social-simple li.end {
+  margin-left: auto;
+}
+
+.AppFooter .social-simple .visit a {
+  font-weight: lighter;
+  background: #ec7b24;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .AppFooter .social-simple a img {
