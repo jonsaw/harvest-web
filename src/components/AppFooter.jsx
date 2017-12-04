@@ -15,6 +15,9 @@ import './AppFooter.css';
 class AppFooter extends Component {
   static propTypes = {
     className: PropTypes.string,
+    history: PropTypes.shape({
+      listen: PropTypes.func,
+    }).isRequired,
   }
   static defaultProps = {
     className: null,
@@ -24,21 +27,38 @@ class AppFooter extends Component {
     this.state = {
       expand: false,
       navOut: false,
+      path: null,
     };
   }
   componentDidMount() {
-    window.addEventListener('scroll', () => {
-      const top = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
-      if (top > 60) {
-        if (!this.state.navOut) {
-          this.setState({ navOut: true });
-        }
-        return;
+    window.addEventListener('scroll', this.onScroll);
+    this.unlisten = this.props.history.listen(this.onLocation);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    this.unlisten();
+  }
+  onScroll = () => {
+    const top = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
+    if (top > 60) {
+      if (!this.state.navOut) {
+        this.setState({ navOut: true });
       }
-      if (this.state.navOut) {
-        this.setState({ navOut: false });
+      return;
+    }
+    if (this.state.navOut) {
+      this.setState({ navOut: false });
+    }
+  }
+  onLocation = (location) => {
+    if (location.pathname !== this.state.path) {
+      window.scrollTo(0, 0);
+      if (this.state.expand) {
+        this.setState({
+          expand: false,
+        });
       }
-    });
+    }
   }
   classNames(...classNames) {
     const names = [].concat(classNames);
