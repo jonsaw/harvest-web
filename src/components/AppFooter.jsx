@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import logo from '../assets/images/harvestklang.svg';
 import arrowUp from '../assets/images/icons/arrow-up.svg';
 import arrowDown from '../assets/images/icons/arrow-down.svg';
 import fbIcon from '../assets/images/icons/facebook.svg';
@@ -22,7 +23,22 @@ class AppFooter extends Component {
     super(props);
     this.state = {
       expand: false,
+      navOut: false,
     };
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      const top = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
+      if (top > 60) {
+        if (!this.state.navOut) {
+          this.setState({ navOut: true });
+        }
+        return;
+      }
+      if (this.state.navOut) {
+        this.setState({ navOut: false });
+      }
+    });
   }
   classNames(...classNames) {
     const names = [].concat(classNames);
@@ -32,6 +48,9 @@ class AppFooter extends Component {
     if (this.state.expand) {
       names.push('expanded');
     }
+    if (this.state.navOut) {
+      names.push('nav-out');
+    }
     return names.join(' ');
   }
   toggleExpand = () => {
@@ -40,16 +59,20 @@ class AppFooter extends Component {
   renderSimple() {
     return (
       <ul className="social-simple">
-        <li>
-          <a href="/">
-            <img src={fbIcon} alt="Facebook" />
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src={instaIcon} alt="Instagram" />
-          </a>
-        </li>
+        {
+          !this.state.navOut && [
+            <li key="1">
+              <a href="https://www.facebook.com/harvestchristianassembly">
+                <img src={fbIcon} alt="Facebook" />
+              </a>
+            </li>,
+            <li key="2">
+              <a href="https://www.instagram.com/harvestklang/">
+                <img src={instaIcon} alt="Instagram" />
+              </a>
+            </li>,
+          ]
+        }
         {
           window.location.pathname !== '/visit' &&
           <li className="visit end">
@@ -99,6 +122,9 @@ class AppFooter extends Component {
           <img src={this.state.expand ? arrowDown : arrowUp} alt="Up" />
         </button>
         <div className="contents">
+          <Link className="logo" to="/">
+            <img src={logo} alt="Home" />
+          </Link>
           {
             this.state.expand ? this.renderExpanded() : this.renderSimple()
           }
