@@ -11,14 +11,15 @@
   transition: all 0.5s;
   padding: 0.4rem;
   left: 1.5rem;
-  top: 0.3rem;
+  top: -0.5rem;
   background: #1b1c1d;
   border-radius: 100%;
   position: absolute;
 }
 
 .AppFooter.expanded .logo {
-  margin-top: -1.5rem;
+  border-bottom: 2px solid white;
+  margin-top: -2.2rem;
 }
 
 .AppFooter.nav-out .logo {
@@ -35,6 +36,7 @@
 .AppFooter .contents {
   max-width: 800px;
   margin: auto;
+  position: relative;
 }
 
 .AppFooter a {
@@ -44,12 +46,12 @@
 
 .AppFooter .expand-button {
   cursor: pointer;
-  margin: -1em auto -0.65em;
+  margin: -1.3rem auto -0.65rem;
   display: block;
   background: #1b1c1d;
   border-radius: 35%;
   border: none;
-  padding: .6em 1em;
+  padding: .6rem 1rem;
   font-size: 1em;
   letter-spacing: .8px;
   color: white;
@@ -59,6 +61,7 @@
 }
 
 .AppFooter .expanded-view .social {
+  margin-top: 0.5rem;
   display: flex;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -74,12 +77,12 @@
 }
 
 .AppFooter .expanded-view .social li {
-  padding: 0.25em 0 0.25em 1.5em;
+  padding: 0.25em 0 0.25rem 1.5rem;
   display: block;
 }
 
 .AppFooter .expanded-view .social li {
-  background-size: 1em 1em;
+  background-size: 1rem 1rem;
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -105,16 +108,16 @@
 }
 
 .AppFooter .expand-button img {
-  height: 1em;
+  height: 1rem;
 }
 
 .AppFooter .social-simple {
-  margin: 0 1em;
+  margin: 0 1rem;
 }
 
 .AppFooter .social-simple a {
   display: inline-block;
-  padding: 0.25em;
+  padding: 0.25rem;
 }
 
 .AppFooter .social-simple {
@@ -125,17 +128,40 @@
   margin-left: auto;
 }
 
+.AppFooter .social-simple li:not(.visit) a {
+  padding: 0.4rem 0.5rem;
+}
+
 .AppFooter .social-simple .visit a {
   font-weight: lighter;
   background: #ec7b24;
-  text-transform: uppercase;
   border-radius: 5px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .AppFooter .social-simple a img {
-  height: 1em;
+  height: 1rem;
+}
+
+.AppFooter .quick-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  font-weight: lighter;
+}
+
+.AppFooter .quick-nav li {
+  width: 30%;
+}
+
+.AppFooter .quick-nav a {
+  text-align: center;
+  font-size: 0.9rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: #465298;
 }
 
 @media screen and (min-width: 426px) {
@@ -147,6 +173,6 @@
 
 @media screen and (max-width: 321px) {
   .AppFooter .expanded-view .social li {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }

@@ -112,6 +112,17 @@ class AppFooter extends Component {
             </ul>
           </div>
         </div>
+        <ul className="quick-nav">
+          <li>
+            <Link to="/connect">Connect</Link>
+          </li>
+          <li>
+            <Link to="/events">Happenings</Link>
+          </li>
+          <li>
+            <Link to="/">Inspire</Link>
+          </li>
+        </ul>
       </div>
     );
   }
