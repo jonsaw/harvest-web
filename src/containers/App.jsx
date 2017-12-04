@@ -20,8 +20,8 @@ const App = ({ history }) => {
       <ConnectedRouter history={history}>
         <div className="wrapper">
           <AppNavBar />
-          <Routes childProps={childProps} />
           <AppFooter />
+          <Routes childProps={childProps} />
         </div>
       </ConnectedRouter>
     </div>
