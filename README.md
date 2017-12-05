@@ -1,7 +1,7 @@
 # Harvest Web
 Frontend repository for [harvest.com](https://www.harvestklang.com/).
 
-## Getting Started with Demo App
+## Getting Started
 1. Clone repository.
 
     ```
