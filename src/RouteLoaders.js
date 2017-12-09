@@ -17,6 +17,16 @@ export const AsyncEvents = Loadable({
   loading: LoadingPage,
 });
 
+export const AsyncNewsletters = Loadable({
+  loader: () => import('./containers/Newsletters'),
+  loading: LoadingPage,
+});
+
+export const AsyncNewsletter = Loadable({
+  loader: () => import('./containers/Newsletter'),
+  loading: LoadingPage,
+});
+
 export const AsyncVisit = Loadable({
   loader: () => import('./containers/Visit'),
   loading: LoadingPage,
