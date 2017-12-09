@@ -1,0 +1,29 @@
+.Newsletter {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Newsletter h1 {
+  margin-bottom: 1rem;
+}
+
+.Newsletter .view {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  .Newsletter .description {
+    padding-right: 18rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .Newsletter {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .view {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+}
