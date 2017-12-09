@@ -108,7 +108,7 @@ class Home extends Component {
               <Link to="/events">Happenings</Link>
             </li>
             <li>
-              <Link to="/">Inspire</Link>
+              <Link to="/newsletters">Inspire</Link>
             </li>
           </ul>
         </nav>
