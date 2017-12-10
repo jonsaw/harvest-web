@@ -1,5 +1,5 @@
 # Harvest Web
-Frontend repository for [harvest.com](https://www.harvestklang.com/).
+Frontend repository for [harvestklang.com](https://www.harvestklang.com/).
 
 ## Getting Started
 1. Clone repository.
