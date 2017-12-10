@@ -19,6 +19,7 @@ class Connect extends Component {
       description: PropTypes.string,
       email: PropTypes.string,
       group: PropTypes.string,
+      imageSrc050: PropTypes.string,
     })),
     className: PropTypes.string,
   };
@@ -99,7 +100,20 @@ class Connect extends Component {
                 </a>
               </div>
             </div>
-            <div className="image" />
+            {
+              staff.imageSrc050 ?
+                <div
+                  className="image"
+                  style={{
+                    backgroundImage: `url(${staff.imageSrc050})`,
+                    backgroundPosition: 'center center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '114px',
+                    backgroundColor: '#ececec',
+                  }}
+                /> :
+                <div className="image" />
+            }
           </li>
         ))}
       </ul>
