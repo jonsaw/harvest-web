@@ -30,6 +30,11 @@ const services = [
   {
     name: 'Chinese Service',
     time: 'Saturdays at 8:00pm',
+    location: '2nd Floor, Hall A',
+  },
+  {
+    name: 'TeenEdge',
+    time: 'Saturdays at 5:00pm',
     location: 'Rooftop Sanctuary',
   },
 ];
