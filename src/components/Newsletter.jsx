@@ -37,9 +37,9 @@ const Newsletter = (props) => {
             className="image"
             style={{
               backgroundImage: `url(${props.imageSrc050})`,
-              backgroundPosition: 'center center',
+              backgroundPosition: 'top center',
               backgroundRepeat: 'no-repeat',
-              backgroundSize: props.featured ? '400px' : '220px',
+              backgroundSize: '100%',
               backgroundColor: '#ececec',
             }}
             alt={props.shortTitle}
