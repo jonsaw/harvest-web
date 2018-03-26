@@ -39,7 +39,7 @@ function getEventFailure(status, message) {
   };
 }
 
-export function getEvent(id, eventAt, path = endpoints.EVENT(id, eventAt)) {
+export function getEvent(id, path = endpoints.EVENT(id)) {
   return async (dispatch, getState) => {
     dispatch(getEventRequest());
     const ONE_HOUR = 60 * 60 * 1000;

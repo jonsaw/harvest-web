@@ -48,11 +48,11 @@ class Event extends Component {
     event: selectors.getEvent(state),
   });
   componentDidMount() {
-    this.fetchEvent(this.props.match.params.id, this.props.match.params.eventAt);
+    this.fetchEvent(this.props.match.params.id);
   }
-  async fetchEvent(id, eventAt) {
+  async fetchEvent(id) {
     const { store } = this.context;
-    const res = await store.dispatch(getEvent(id, eventAt));
+    const res = await store.dispatch(getEvent(id));
     if (res > status.EVENT_STATUS_OK) {
       await this.setStateAsync({
         message: 'An error occurred. Please refresh page.',
