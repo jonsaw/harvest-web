@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+import config from '../config';
+
 import logo from '../assets/images/harvestklang.svg';
 import arrowUp from '../assets/images/icons/arrow-up.svg';
 import arrowDown from '../assets/images/icons/arrow-down.svg';
@@ -143,6 +145,10 @@ class AppFooter extends Component {
             <Link to="/newsletters">Inspire</Link>
           </li>
         </ul>
+        <div className="metadata">
+          <p className="copyright">Copyright © 2018 Harvest Klang. All rights reserved.</p>
+          <p className="version">v{config.app.version}</p>
+        </div>
       </div>
     );
   }
