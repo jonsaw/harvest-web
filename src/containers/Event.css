@@ -1,0 +1,71 @@
+.Event {
+  width: calc(100% - 2rem);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Event .markdown p {
+  margin-bottom: 1rem;
+}
+
+.Event .image {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.Event > .details {
+  display: flex;
+  flex-direction: row;
+}
+
+.Event > .details > div, .Event > .details > ul {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.Event > .details > ul > li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.Event > .details > div:first-child {
+  margin-left: 0;
+}
+
+.Event > .details > div:last-child {
+  margin-right: 0;
+}
+
+.Event > .details > ul .show-icon {
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 0.25rem 0 0.25rem 1.5rem;
+}
+
+.Event > .details > ul .date {
+  background-image: url('../assets/images/icons/calendar.svg');
+}
+
+.Event > .details > ul .location {
+  background-image: url('../assets/images/icons/home.svg');
+}
+
+@media screen and (max-width: 800px) {
+  .Event > .details {
+    flex-direction: column;
+  }
+
+  .Event > .details > div, .Event > .details > ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .Event > .details > div.image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
