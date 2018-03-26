@@ -7,7 +7,7 @@ import * as selectors from '../redux/selectors';
 import { getEvents } from '../redux/events/actions';
 import * as status from '../redux/events/status';
 
-import Event from '../components/Event';
+import Event from '../components/EventItem';
 import LoadingPage from '../components/LoadingPage';
 
 import './Home.css';

@@ -48,7 +48,7 @@
   margin: 0 auto 1rem;
 }
 
-.Home .events .Event {
+.Home .events .EventItem {
   width: calc(25% - 1rem - 2px);
   margin-right: 0.25rem;
   margin-left: 0.25rem
@@ -103,14 +103,10 @@
     overflow: auto;
   }
 
-  .Home .events .Event {
+  .Home .events .EventItem {
     flex: 1;
     min-width: 200px;
     margin-right: 0.25rem;
     margin-left: 0.25rem
-  }
-
-  .Home .events li, .Home .events li.more {
-    height: 17.375rem;
   }
 }

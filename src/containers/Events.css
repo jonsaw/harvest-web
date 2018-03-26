@@ -10,13 +10,13 @@
   margin: auto;
 }
 
-.Events .Event {
+.Events .EventItem {
   width: calc(25% - 0.5rem - 2px);
   margin-right: 0.25rem;
   margin-left: 0.25rem
 }
 
-.Events .featured.Event {
+.Events .featured.EventItem {
   width: calc(50% - 0.5rem - 2px);
 }
 
@@ -28,10 +28,10 @@
 }
 
 @media (max-width: 750px) {
-  .Events .Event {
+  .Events .EventItem {
     width: calc(50% - 0.5rem - 2px);
   }
-  .Events .featured.Event {
+  .Events .featured.EventItem {
     width: calc(100% - 0.5rem - 2px);
   }
 }
