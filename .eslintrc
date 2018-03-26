@@ -12,6 +12,6 @@
       "components": [ "Link" ],
       "specialLink": [ "to" ],
       "aspects": [ "noHref", "invalidHref", "preferButton" ]
-    }],
+    }]
   }
 }
