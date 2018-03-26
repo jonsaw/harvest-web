@@ -7,8 +7,8 @@
     "email": "jon.saw@gmail.com"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "REACT_APP_VERSION=$npm_package_version react-scripts start",
+    "build": "REACT_APP_VERSION=$npm_package_version react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js --ext .jsx src/"
