@@ -20,7 +20,7 @@ const Event = (props) => {
         props.imageSrc050 ? 'with-image' : null,
       )}
     >
-      <Link to={`/events/${props.eventID}/${props.eventAt}`}>
+      <Link to={`/events/${props.eventID}`}>
         <div className="header">
           <h3>{props.shortTitle}</h3>
         </div>

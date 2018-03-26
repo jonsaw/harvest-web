@@ -28,7 +28,6 @@ class Event extends Component {
     match: PropTypes.shape({
       params: PropTypes.shape({
         id: PropTypes.string.isRequired,
-        eventAt: PropTypes.string.isRequired,
       }).isRequired,
     }).isRequired,
   };

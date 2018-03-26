@@ -20,7 +20,7 @@ const Routes = ({ childProps }) => (
   <Switch>
     <RouteApplied path="/" exact component={AsyncHome} props={childProps} />
     <RouteApplied path="/connect" component={AsyncConnect} props={childProps} />
-    <RouteApplied path="/events/:id/:eventAt" component={AsyncEvent} props={childProps} />
+    <RouteApplied path="/events/:id" component={AsyncEvent} props={childProps} />
     <RouteApplied path="/events" component={AsyncEvents} props={childProps} />
     <RouteApplied path="/newsletters/:id" component={AsyncNewsletter} props={childProps} />
     <RouteApplied path="/newsletters" component={AsyncNewsletters} props={childProps} />
