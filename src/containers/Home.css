@@ -57,15 +57,16 @@
 .Home .events .more {
   height: 18.375rem;
   width: calc(1.5rem - 2px);
-  border: 1px solid #ececec;
-  border-radius: 5px;
+  background: #ececec;
+  background: linear-gradient(to right, #ececec 0%,#ffffff 81%);
+  border-left: 1px solid #ececec;
+  border-radius: 5px 0 0 5px;
   margin-bottom: 0.75rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 }
 
 .Home .events .more a {
-  background: #ececec;
   display: flex;
   align-items: center;
   height: 100%;
@@ -73,7 +74,6 @@
 
 .Home .events .more a:hover {
   transition: background ease 0.5s;
-  background: rgba(0, 0, 0, .03);
 }
 
 .Home .events .more img {

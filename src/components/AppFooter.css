@@ -1,8 +1,10 @@
 
 .AppFooter {
-  background: #1b1c1d;
-  color: white;
+  background: white;
+  background: linear-gradient(to bottom, #ececec 0%,#ffffff 50%);
+  color: #1b1c1d;
   z-index: 200;
+  border-top: 1px solid #ececec;
 }
 
 .AppFooter .logo {
@@ -12,13 +14,13 @@
   padding: 0.4rem;
   left: 1.5rem;
   top: -0.5rem;
-  background: #1b1c1d;
   border-radius: 100%;
   position: absolute;
 }
 
 .AppFooter.expanded .logo {
   border-bottom: 2px solid white;
+  background: #ececec;
   margin-top: -2.2rem;
 }
 
@@ -40,7 +42,7 @@
 }
 
 .AppFooter a {
-  color: white;
+  color: #1b1c1d;
   text-decoration: none;
 }
 
@@ -56,7 +58,7 @@
   cursor: pointer;
   margin: -1.3rem auto -0.65rem;
   display: block;
-  background: #1b1c1d;
+  background: #ececec;
   border-radius: 35%;
   border: none;
   padding: .6rem 1rem;
@@ -139,6 +141,7 @@
 
 .AppFooter .social-simple .visit a {
   font-weight: lighter;
+  color: white;
   background: #ec7b24;
   border-radius: 5px;
   padding-left: 1rem;
@@ -166,7 +169,8 @@
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background: #465298;
+  color: white;
+  background: #ec7b24;
 }
 
 @media screen and (min-width: 426px) {
