@@ -1,0 +1,5 @@
+export const EVENT_REQUEST = 'EVENT_REQUEST';
+export const EVENT_FAILURE = 'EVENT_FAILURE';
+export const EVENT_SUCCESS = 'EVENT_SUCCESS';
+export const EVENT_EXISTING = 'EVENT_EXISTING';
+export const EVENT_ERROR = 'EVENT_ERROR';

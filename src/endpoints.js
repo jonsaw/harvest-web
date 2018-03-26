@@ -1,6 +1,7 @@
 import config from './config';
 
+export const EVENT = (id, eventAt) => `${config.apiURL}/events/${id}/${eventAt}`;
 export const EVENTS = `${config.apiURL}/events`;
-export const NEWSLETTERS = `${config.apiURL}/newsletters`;
 export const NEWSLETTER = id => `${config.apiURL}/newsletters/${id}`;
+export const NEWSLETTERS = `${config.apiURL}/newsletters`;
 export const STAFF = `${config.apiURL}/staff`;
