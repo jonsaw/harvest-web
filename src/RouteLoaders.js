@@ -12,18 +12,23 @@ export const AsyncConnect = Loadable({
   loading: LoadingPage,
 });
 
+export const AsyncEvent = Loadable({
+  loader: () => import('./containers/Event'),
+  loading: LoadingPage,
+});
+
 export const AsyncEvents = Loadable({
   loader: () => import('./containers/Events'),
   loading: LoadingPage,
 });
 
-export const AsyncNewsletters = Loadable({
-  loader: () => import('./containers/Newsletters'),
+export const AsyncNewsletter = Loadable({
+  loader: () => import('./containers/Newsletter'),
   loading: LoadingPage,
 });
 
-export const AsyncNewsletter = Loadable({
-  loader: () => import('./containers/Newsletter'),
+export const AsyncNewsletters = Loadable({
+  loader: () => import('./containers/Newsletters'),
   loading: LoadingPage,
 });
 
