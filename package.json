@@ -1,14 +1,14 @@
 {
   "name": "harvest-web",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "private": true,
   "author": {
     "name": "Jon Saw",
     "email": "jon.saw@gmail.com"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "REACT_APP_VERSION=$npm_package_version react-scripts start",
+    "build": "REACT_APP_VERSION=$npm_package_version react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js --ext .jsx src/"
@@ -21,6 +21,7 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-loadable": "^5.3.1",
+    "react-markdown": "^3.3.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",

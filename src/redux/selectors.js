@@ -1,8 +1,12 @@
 
+import * as event from './event/selectors';
 import * as events from './events/selectors';
 import * as newsletter from './newsletter/selectors';
 import * as newsletters from './newsletters/selectors';
 import * as staff from './staff/selectors';
+
+export const getEventLoading = state => event.getLoading(state.event);
+export const getEvent = state => event.getEvent(state.event);
 
 export const getEventsLoading = state => events.getLoading(state.events);
 export const getEvents = state => events.getEvents(state.events);

@@ -25,9 +25,9 @@
 }
 
 .App .AppFooter.expanded ~ div {
-  padding-bottom: 15rem;
+  padding-bottom: 16rem;
 }
 
 .App .AppFooter.expanded {
-  height: 12rem;
+  height: 13rem;
 }

@@ -48,7 +48,7 @@
   margin: 0 auto 1rem;
 }
 
-.Home .events .Event {
+.Home .events .EventItem {
   width: calc(25% - 1rem - 2px);
   margin-right: 0.25rem;
   margin-left: 0.25rem
@@ -57,15 +57,16 @@
 .Home .events .more {
   height: 18.375rem;
   width: calc(1.5rem - 2px);
-  border: 1px solid #ececec;
-  border-radius: 5px;
+  background: #ececec;
+  background: linear-gradient(to right, #ececec 0%,#ffffff 81%);
+  border-left: 1px solid #ececec;
+  border-radius: 5px 0 0 5px;
   margin-bottom: 0.75rem;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 }
 
 .Home .events .more a {
-  background: #ececec;
   display: flex;
   align-items: center;
   height: 100%;
@@ -73,7 +74,6 @@
 
 .Home .events .more a:hover {
   transition: background ease 0.5s;
-  background: rgba(0, 0, 0, .03);
 }
 
 .Home .events .more img {
@@ -103,14 +103,10 @@
     overflow: auto;
   }
 
-  .Home .events .Event {
+  .Home .events .EventItem {
     flex: 1;
     min-width: 200px;
     margin-right: 0.25rem;
     margin-left: 0.25rem
-  }
-
-  .Home .events li, .Home .events li.more {
-    height: 17.375rem;
   }
 }
