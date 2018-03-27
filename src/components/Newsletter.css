@@ -39,9 +39,10 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  margin: -1.5625rem 0 0 -5.4375rem;
+  margin: -1.5625rem 0 0 -4.7rem;
   height: 3.125rem;
-  padding: 0 1.25rem;
+  width: 9.4rem;
+  text-align: center;
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
