@@ -24,6 +24,8 @@
   display: block;
   padding-right: 1em;
   padding-left: 1em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   height: 100%;
   display: flex;
 }

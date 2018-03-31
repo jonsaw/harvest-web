@@ -12,7 +12,7 @@ import LoadingPage from '../components/LoadingPage';
 
 import './Home.css';
 import arrowRight from '../assets/images/icons/arrow-right.svg';
-import banner from '../assets/images/banner.png';
+import banner from '../assets/images/banner-colors.png';
 
 const classNames = (...names) => names.filter(n => !!n).join(' ');
 

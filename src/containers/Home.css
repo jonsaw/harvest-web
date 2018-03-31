@@ -23,16 +23,14 @@
 }
 
 .Home .banner {
-  background: linear-gradient(45deg,#f401f4,rgba(244,1,244,0) 70%)
-    , linear-gradient(135deg,#01d560 10%,rgba(1,213,96,0) 80%)
-    , linear-gradient(225deg,#6a04e7 10%,rgba(106,4,231,0) 80%)
-    , linear-gradient(315deg,#0be0b5 100%,rgba(11,224,181,0) 0);
+  background: #fdfbfb;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #ececec;
 }
 
 .Home .banner img {
