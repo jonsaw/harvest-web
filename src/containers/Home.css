@@ -1,3 +1,7 @@
+.Home nav {
+  border-bottom: 1px solid #ececec;
+}
+
 .Home nav ul {
   display: flex;
   justify-content: space-around;
