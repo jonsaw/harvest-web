@@ -133,6 +133,7 @@
 
 .AppFooter .social-simple li.end {
   margin-left: auto;
+  margin-top: 0.2rem;
 }
 
 .AppFooter .social-simple li:not(.visit) a {
