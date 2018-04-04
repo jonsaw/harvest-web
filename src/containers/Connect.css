@@ -24,7 +24,7 @@
   margin-right: 0.25rem;
   margin-left: 0.25rem;
   height: 9.375rem;
-  width: calc(50% - 0.5rem - 2px);
+  width: calc(50% - 0.5rem);
 }
 
 .Connect .groups .list .staff .details {
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 782px) {
   .Connect .groups .list .staff {
-    width: calc(100% - 2px);
+    width: 100%;
   }
   .Connect .groups .list .staff .contact a {
     font-size: 0.8em;

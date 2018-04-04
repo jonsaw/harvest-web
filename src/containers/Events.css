@@ -11,13 +11,13 @@
 }
 
 .Events .EventItem {
-  width: calc(25% - 0.5rem - 2px);
+  width: calc(25% - 0.5rem);
   margin-right: 0.25rem;
   margin-left: 0.25rem
 }
 
 .Events .featured.EventItem {
-  width: calc(50% - 0.5rem - 2px);
+  width: calc(50% - 0.5rem);
 }
 
 @media (max-width: 800px) {
@@ -29,9 +29,9 @@
 
 @media (max-width: 750px) {
   .Events .EventItem {
-    width: calc(50% - 0.5rem - 2px);
+    width: calc(50% - 0.5rem);
   }
   .Events .featured.EventItem {
-    width: calc(100% - 0.5rem - 2px);
+    width: calc(100% - 0.5rem);
   }
 }
