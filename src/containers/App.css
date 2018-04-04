@@ -6,10 +6,6 @@
   flex-direction: column;
 }
 
-.App .AppNavBar {
-  height: 3.5rem;
-}
-
 .App .App-contents {
   transition: padding 0.15s ease-out;
   padding-bottom: 6rem;
