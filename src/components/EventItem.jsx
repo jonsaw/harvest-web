@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import { dateRange } from '../utils/date';
+import { classNames } from '../utils/classNames';
 import getElementType from '../utils/getElementType';
 
 import './EventItem.css';
-
-const classNames = (...names) => names.filter(n => !!n).join(' ');
 
 const Event = (props) => {
   const ElementType = getElementType(Event, props);
