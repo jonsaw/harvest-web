@@ -85,7 +85,7 @@ class Home extends Component {
         return -1;
       }
       return 0;
-    }).slice(0, 4);
+    }).slice(0, 3);
   }
   async fetchEvents() {
     const { store } = this.context;
@@ -122,6 +122,33 @@ class Home extends Component {
         </div>
         <LoadingPage isLoading={this.props.loading} />
         <ul className="events">
+          <li className="EventItem pinned with-image">
+            <a href="https://drive.google.com/open?id=1InVcd3H4ui01LdYSTrP3VfO4Y6u9EnXA">
+              <div className="hover">
+                <div className="button">
+                  Download
+                </div>
+              </div>
+              <p>
+                Download the In Out Reach APK for a 3D surprise.
+                View it in our latest issue of Harvest Season.&nbsp;
+                <em>Only available for Android</em>.
+              </p>
+              <div className="location">
+                Download
+              </div>
+              <div
+                className="image"
+                alt="Download In Out Reach APK"
+                style={{
+                  backgroundImage: 'url("https://s3-ap-southeast-1.amazonaws.com/hca-web-box/images/paper_hearts_icon.png")',
+                  backgroundPosition: 'center center',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: '200px',
+                }}
+              />
+            </a>
+          </li>
           {this.getEvents().map(event => (
             <Event as="li" key={event.eventID} {...event} featured={false} />
           ))}
