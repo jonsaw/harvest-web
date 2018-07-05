@@ -58,6 +58,18 @@
   margin-left: 0.25rem
 }
 
+.Home .events .pinned.EventItem em {
+  font-style: italic;
+}
+
+.Home .events .pinned.EventItem .location {
+  background: #ec7b24;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .Home .events .more {
   height: 18.375rem;
   width: 1.5rem;
