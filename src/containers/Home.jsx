@@ -123,7 +123,7 @@ class Home extends Component {
         <LoadingPage isLoading={this.props.loading} />
         <ul className="events">
           <li className="EventItem pinned with-image">
-            <a href="https://drive.google.com/open?id=1InVcd3H4ui01LdYSTrP3VfO4Y6u9EnXA">
+            <a href="https://drive.google.com/drive/folders/15VnVoTqHAg6t0o9zHXMoe370nYiGI0sO">
               <div className="hover">
                 <div className="button">
                   Download
